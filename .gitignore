@@ -1,0 +1,13 @@
+__pycache__/
+test.py
+todo.txt
+.venv/
+.env
+..gitignore.swp
+preferences.json
+.idea/
+Converted/
+dist/
+build/
+*.spec
+*.log

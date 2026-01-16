@@ -1,0 +1,53 @@
+QPushButton#selectButton {
+    background-color: #1f6aa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+QPushButton#selectButton:hover {
+    background-color: #2a82c9;
+}
+
+QPushButton#selectButton:pressed {
+    background-color: #165a8c;
+}
+
+QPushButton#convertButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+QPushButton#convertButton:hover {
+    background-color: #31c94d;
+}
+
+QPushButton#convertButton:pressed {
+    background-color: #218838;
+}
+
+QPushButton#clearAllButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+QPushButton#clearAllButton:hover {
+    background-color: #e4606d;
+}
+
+QPushButton#clearAllButton:pressed {
+    background-color: #c82333;
+}
