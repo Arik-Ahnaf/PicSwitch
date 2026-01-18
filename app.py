@@ -139,21 +139,19 @@ class Window(QWidget):
         self.update_list_widget(failed_paths)
         self.updates_window.movie.stop()
         self.updates_window.gif_label.hide()
-
+        self.updates_window.close()
+        
         if not failed_paths:
-            self.updates_window.close()
             QMessageBox.information(
                 self,
                 "Conversion Completed",
                 "All images have been successfully converted!"
             )
         else:
-            self.updates_window.label.setText(f"Conversion Completed with {len(failed_paths)} failure(s). Check the log file for details.")
-            self.updates_window.ok_button.setVisible(True)
             QMessageBox.warning(
                 self,
                 "Conversion Completed with Errors",
-                f"Some images failed to convert. {len(failed_paths)} image(s) could not be processed. Please check the log file for details."
+                f"{len(failed_paths)} image(s) could not be processed. Please check the log file for details."
             )
     
 

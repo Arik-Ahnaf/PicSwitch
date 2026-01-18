@@ -50,19 +50,19 @@ class Worker(QObject):
                         img.save(new_path, format=selected_format)
                     successful_paths.append(path)
                 except Exception as e:
-                    self.logger.error(f"Error converting {path}: {e}")
+                    self.logger.error(f"Error converting image: {e}")
                     failed_images.append(path)
                     
             self.finished.emit(successful_paths, failed_images)
 
         except PermissionError:
             self.logger.error("Permission denied. File may be in use or folder is protected.")
-            return
+            self.finished.emit([], self.image_paths)
 
         except OSError as e:
             self.logger.error(f"File system error: {e}")
-            return
+            self.finished.emit([], self.image_paths)
 
         except Exception as e:
             self.logger.error(f"Unexpected error: {e}")
-            return
+            self.finished.emit([], self.image_paths)
