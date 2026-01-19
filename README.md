@@ -2,7 +2,7 @@
 
 A fast, simple, and intuitive desktop application built with **Python** and **PyQt5** to convert images between various formats effortlessly.
 
-<img width="630" height="250" alt="PicSwitch" src="https://github.com/user-attachments/assets/50418920-1ebb-4cb3-9c63-b31386bee891" />
+<img width="630" height="260" alt="PicSwitch" src="https://github.com/user-attachments/assets/add90f3c-a308-41df-bd7e-72d45934eb3b" />
 
 ## ✨ Features
 * **Batch Conversion:** Process images quickly with a simple interface.
